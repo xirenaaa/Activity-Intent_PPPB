@@ -1,4 +1,4 @@
-import org.gradle.kotlin.dsl.resolver.fetchKotlinBuildScriptModelFor
+// File: app/build.gradle.kts
 
 plugins {
     alias(libs.plugins.android.application)
@@ -41,7 +41,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -50,7 +49,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.google.android.filament:filament-android:1.9.25")
-    implementation("com.google.android.filament:filament-utils-android:1.9.25")
-    implementation("com.google.android.filament:gltfio-android:1.9.25")
+
 }

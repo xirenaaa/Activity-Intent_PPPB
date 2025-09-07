@@ -4,24 +4,16 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/circular_gradient_background"
+    android:background="@color/light_blue_50"
     android:padding="24dp"
     tools:context=".MainActivity">
-
-    <com.example.intenapp.FilamentView
-        android:id="@+id/filament_view"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
 
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/filament_view"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="100dp"
         android:text="Selamat Datang!"
         android:textColor="@color/light_blue_900"
         android:textSize="32sp"
@@ -32,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_title"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/edit_text_background"
         android:hint="Masukkan Nama Anda"
         android:padding="16dp" />
@@ -43,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/edt_name"
         android:layout_marginTop="16dp"
-        android:background="@drawable/button_gradient_background"
+        android:backgroundTint="@color/light_blue_600"
         android:text="Lanjutkan"
         android:textColor="@android:color/white" />
 

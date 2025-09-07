@@ -7,7 +7,7 @@ import com.example.intenapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    lateinit var binding: ActivityMainBinding
 
     companion object {
         const val EXTRA_NAME = "data_name"
@@ -18,10 +18,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnToSecondActivity.setOnClickListener {
-            val intentToSecondActivity = Intent(this, SecondActivity::class.java)
-            intentToSecondActivity.putExtra(EXTRA_NAME, binding.edtName.text.toString())
-            startActivity(intentToSecondActivity)
+        with(binding) {
+            btnToSecondActivity.setOnClickListener {
+                val intentToSecondActivity = Intent(this@MainActivity, SecondActivity::class.java)
+
+                intentToSecondActivity.putExtra(EXTRA_NAME, edtName.text.toString())
+
+                startActivity(intentToSecondActivity)
+            }
         }
     }
 }

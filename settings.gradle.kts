@@ -1,3 +1,5 @@
+
+
 pluginManagement {
     repositories {
         google {
@@ -21,4 +23,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "Inten App"
 include(":app")
- 
